@@ -20,3 +20,11 @@ viewing a reading list
 3. Link the search functionality with the backend rather than filtering from
    the cache
 4. Write automated tests for the application
+
+## Running the app
+
+1. after cloning the app, run `npm install` to install dependencies
+2. create a `.env` file and add the backend server urr. see the `.env.sample`
+   file.
+3. Start the backend server
+4. run `npm start` to start the frontend server
