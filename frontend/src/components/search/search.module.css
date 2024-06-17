@@ -1,0 +1,36 @@
+.search-container {
+  position: relative;
+  margin-bottom: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-results-container {
+  z-index: 99;
+  width: 100%;
+  top: 4rem;
+  position: absolute;
+  box-shadow: -2px 4px 4px hsl(0deg 0% 0% / 0.44);
+  border: 1px solid #c4c4c4;
+  background: white;
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .search-container {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .search-container {
+    width: 80%;
+  }
+}
