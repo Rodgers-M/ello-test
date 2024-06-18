@@ -19,6 +19,7 @@ const SearchResultsItem: FC<{ book: Book }> = ({ book }) => {
     readingListVar([...readingListVar(), currentBook]);
     setAddedToReadingList(true);
   };
+
   return (
     <>
       <ListItem key={`${book.id}`}>
@@ -69,7 +70,7 @@ export const SearchResults: FC<SearchResultsProps> = ({ books, visible }) => {
             <ListItemText>No books matched your search</ListItemText>
           </ListItem>
         ) : (
-          books.map((book) => <SearchResultsItem book={book} />)
+          books.map((book) => <SearchResultsItem book={book} key={book.id} />)
         )}
       </List>
     </div>
