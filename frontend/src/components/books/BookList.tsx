@@ -19,6 +19,7 @@ const GET_BOOKS_QUERY = gql`
     }
   }
 `;
+
 export const BookList = () => {
   const [books, setBooks] = useState<Array<TBook>>();
   const [viewReadingList, setViewReadingList] = useState(false);
@@ -30,7 +31,6 @@ export const BookList = () => {
     },
   });
 
-  console.log("books", books);
   useEffect(() => {
     if (viewReadingList) {
       setBooks(readingListVar());
